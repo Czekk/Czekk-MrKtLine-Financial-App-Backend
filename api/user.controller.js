@@ -33,7 +33,6 @@ export default class UserController{
     }
 
     static async apiDeleteUser(req, res, next) {
-
         try{
             const response= await UsersDAO.delete(req.body.id);
             res.json({status: "success"})
