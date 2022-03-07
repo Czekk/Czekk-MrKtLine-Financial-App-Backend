@@ -31,7 +31,6 @@ export default class UserController{
         .then(update => update? res.json(update): res.status(400).json({message: 'Update failed!!'}))
         .catch(err=> next(err))
     }
-
     static async apiDeleteUser(req, res, next) {
         try{
             const response= await UsersDAO.delete(req.body.id);
