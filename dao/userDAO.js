@@ -1,5 +1,5 @@
 import { query, response } from "express";
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import { config } from "dotenv";
 import jwt from 'jsonwebtoken'
 import { ObjectId } from "mongodb";
